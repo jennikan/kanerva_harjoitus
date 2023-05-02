@@ -25,7 +25,7 @@ function addNote(){
     x.textContent = fname.value;
     dateTimeString.textContent = viesti.value;
     
-    //tarkistetaan onko checkboxissa täppiä vai ei
+    //tarkistetaan onko checkbox valittu vai ei
 
     if(checkbox.checked){
         h3.classList.add("important");
@@ -33,6 +33,6 @@ function addNote(){
         x.classList.add("important");  
     }
 
-    //kaikki elementit bodyn sisälle
+    //kaikki elementit articlen sisälle
     article.append(h3,x,p,dateTimeString,document.createElement("hr"));
 }
